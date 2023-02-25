@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Сокращение ссылок</string>
+    <string name="forgot_label">Forgot password?</string>
+    <string name="shortref_edit_text">Введите короткую ссылку</string>
+    <string name="fullref_edit_text">Введите полную ссылку</string>
+    <string name="text_Prompt">Ссылка: </string>
+    <string name="button_text">Start</string>
+    <string name="info_app">Ошибка</string>
+</resources>

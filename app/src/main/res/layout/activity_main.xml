@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/suez_one"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/editTextShortRef"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="74dp"
+        android:autofillHints="shortRef"
+        android:ems="10"
+        android:fontFamily="@font/suez_one"
+        android:hint="@string/shortref_edit_text"
+        android:inputType="textShortMessage|text"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        android:textSize="15sp"
+        android:background="@drawable/rounded_edit_text"
+        android:textColor="@color/stroke_edit_text"
+        android:textColorHint="@color/stroke_edit_text" />
+
+    <EditText
+        android:id="@+id/editTextFullRef"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:autofillHints="Full Reference"
+        android:ems="10"
+        android:fontFamily="@font/suez_one"
+        android:hint="@string/fullref_edit_text"
+        android:inputType="textLongMessage"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        android:background="@drawable/rounded_edit_text"
+        android:textColor="@color/stroke_edit_text"
+        android:textColorHint="@color/stroke_edit_text"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="206dp"
+        android:background="@color/fill_button"
+        android:fontFamily="@font/suez_one"
+        android:text="@string/button_text"
+        android:textColor="@color/stroke_edit_text"
+        android:textSize="25sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/info_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginHorizontal="25dp"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#BCAAA4"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="457dp"
+        android:layout_below="@id/info_app"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginBottom="0dp" />
+
+</RelativeLayout>
